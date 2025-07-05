@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favicon Generator</title>
+</head>
+<body>
+    <h1>Quiz App Favicon</h1>
+    <p>This is a simple favicon for the Quiz App with a blue background and white question mark.</p>
+    
+    <canvas id="favicon" width="32" height="32"></canvas>
+    
+    <script>
+        const canvas = document.getElementById('favicon');
+        const ctx = canvas.getContext('2d');
+        
+        // Draw blue background
+        ctx.fillStyle = '#007aff';
+        ctx.fillRect(0, 0, 32, 32);
+        
+        // Draw white question mark
+        ctx.fillStyle = 'white';
+        ctx.font = 'bold 20px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('?', 16, 16);
+        
+        // Convert to data URL
+        const dataURL = canvas.toDataURL('image/png');
+        console.log('Favicon data URL:', dataURL);
+    </script>
+</body>
+</html> 
