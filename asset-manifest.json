@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dequiz/static/css/main.2db120e2.css",
+    "main.js": "/dequiz/static/js/main.e8913fb9.js",
+    "index.html": "/dequiz/index.html",
+    "main.2db120e2.css.map": "/dequiz/static/css/main.2db120e2.css.map",
+    "main.e8913fb9.js.map": "/dequiz/static/js/main.e8913fb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2db120e2.css",
+    "static/js/main.e8913fb9.js"
+  ]
+}
