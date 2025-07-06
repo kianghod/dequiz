@@ -102,7 +102,10 @@ const ColorPaletteQuizPage = () => {
           <TopBar />
           <h2 style={{ margin: '32px 0 16px' }}>Game Over!</h2>
           <div style={{ fontSize: 22, marginBottom: 24 }}>Your Score: <b>{score}</b></div>
-          <button className="btn btn-primary" onClick={handleRestart}>Play Again</button>
+          <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <button className="btn btn-secondary" onClick={handleRestart}>Play Again</button>
+            <button className="btn btn-primary" onClick={() => navigate('/')}>Select Quiz</button>
+          </div>
         </div>
       </div>
     );

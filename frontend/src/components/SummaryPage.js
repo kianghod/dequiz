@@ -229,9 +229,14 @@ const SummaryPage = () => {
         )}
 
         <div style={{ textAlign: 'center', marginTop: '40px' }}>
-          <button className="btn btn-primary" onClick={handlePlayAgain}>
-            Play Again
-          </button>
+          <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <button className="btn btn-secondary" onClick={handlePlayAgain}>
+              Play Again
+            </button>
+            <button className="btn btn-primary" onClick={() => navigate('/')}>
+              Select Quiz
+            </button>
+          </div>
         </div>
       </div>
       
