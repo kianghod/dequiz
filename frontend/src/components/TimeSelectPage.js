@@ -24,12 +24,20 @@ const TimeSelectPage = () => {
 
   const handleStartQuiz = () => {
     if (selectedTime) {
-      navigate('/quiz', {
-        state: {
-          quizType,
-          timeLimit: selectedTime
-        }
-      });
+      if (quizType === 'color-palette') {
+        navigate('/color-palette-quiz', {
+          state: {
+            timeLimit: selectedTime
+          }
+        });
+      } else {
+        navigate('/quiz', {
+          state: {
+            quizType,
+            timeLimit: selectedTime
+          }
+        });
+      }
     }
   };
 

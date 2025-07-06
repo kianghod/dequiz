@@ -12,10 +12,10 @@ const LandingPage = () => {
       icon: '🎨'
     },
     {
-      id: 'color',
-      name: 'Color Matching',
-      description: 'Challenge yourself with color theory, palettes, and matching exercises.',
-      icon: '🌈'
+      id: 'color-palette',
+      name: 'Color Palette Quiz',
+      description: 'Spot the different color! Gets harder as you go.',
+      icon: '🟦'
     }
   ];
 
